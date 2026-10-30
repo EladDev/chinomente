@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ui/ProductCard';
-import { ArrowLeft, ShoppingCart, Store } from 'lucide-react';
 
-// 1. Definimos una interfaz para que TypeScript sepa exactamente qué es un producto
+import { ArrowLeft, ShoppingCart, Store } from '@phosphor-icons/react';
+
 interface Producto {
   id: number;
   nombre: string;
@@ -11,14 +11,12 @@ interface Producto {
 }
 
 export default function Shop() {
-  // 2. Tipamos el array
   const productos: Producto[] = [
     { id: 1, nombre: "Camiseta Neon Tour", precio: "$25.00", imagen: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1000&auto=format&fit=crop" },
     { id: 2, nombre: "Vinilo Diamante", precio: "$40.00", imagen: "https://images.unsplash.com/photo-1539375665275-f9de415ef9ac?q=80&w=1000&auto=format&fit=crop" },
     { id: 3, nombre: "Gorra Chinomente", precio: "$20.00", imagen: "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=1000&auto=format&fit=crop" }
   ];
 
-  // 3. Añadimos funciones vacías para los botones. Esto evita errores si Vercel tiene activada la regla de "no-unused-vars" (variables no usadas).
   const handleCartClick = () => {
     console.log("Carrito clickeado");
   };
@@ -33,7 +31,6 @@ export default function Shop() {
         <Link to="/" className="text-gray-400 hover:text-[#39ff14] flex items-center gap-2 transition-colors font-medium">
           <ArrowLeft size={20}/> Volver al inicio
         </Link>
-        {/* 4. Añadimos el onClick a los botones */}
         <button 
           onClick={handleCartClick}
           className="flex items-center gap-2 bg-[#39ff14] text-black px-4 py-2 rounded-full font-bold hover:bg-white transition-colors shadow-[0_0_15px_rgba(57,255,20,0.3)]"
