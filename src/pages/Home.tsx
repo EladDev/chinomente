@@ -10,7 +10,7 @@ export default function Home() {
         
         {/* Título Principal Responsivo */}
         <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-[#39ff14] via-[#a3ff12] to-[#39ff14] drop-shadow-[0_0_30px_rgba(57,255,20,0.6)] text-center leading-tight">
-          DiamanteStore
+          DiamenteStore
         </h1>
         
         <div className="flex items-center gap-4 my-3 opacity-80">
