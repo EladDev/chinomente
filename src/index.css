@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #050505; /* Fondo negro profundo */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Opcional: un patrón sutil de puntos para que no se vea plano */
+    background-image: radial-gradient(rgba(57, 255, 20, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+}
+
+/* Aseguramos que el canvas se comporte bien */
+canvas {
+  display: block;
+}
