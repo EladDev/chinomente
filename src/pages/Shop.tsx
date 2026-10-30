@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ui/ProductCard';
 
-import { ArrowLeft, ShoppingCart, Store } from '@phosphor-icons/react';
-
 interface Producto {
   id: number;
   nombre: string;
@@ -29,13 +27,13 @@ export default function Shop() {
     <div className="z-10 w-full max-w-6xl p-4 md:p-8 bg-zinc-900/70 backdrop-blur-xl rounded-3xl border border-[#39ff14]/20 shadow-[0_0_60px_rgba(57,255,20,0.05)] my-10">
       <div className="flex justify-between items-center mb-8">
         <Link to="/" className="text-gray-400 hover:text-[#39ff14] flex items-center gap-2 transition-colors font-medium">
-          <ArrowLeft size={20}/> Volver al inicio
+          <span>&larr;</span> Volver al inicio
         </Link>
         <button 
           onClick={handleCartClick}
           className="flex items-center gap-2 bg-[#39ff14] text-black px-4 py-2 rounded-full font-bold hover:bg-white transition-colors shadow-[0_0_15px_rgba(57,255,20,0.3)]"
         >
-          <ShoppingCart size={18}/> Carrito (0)
+          <span>🛒</span> Carrito (0)
         </button>
       </div>
 
@@ -55,7 +53,7 @@ export default function Shop() {
 
       <div className="flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-zinc-900 to-black border border-zinc-800 p-6 rounded-2xl">
         <div className="flex items-center gap-4 mb-4 md:mb-0">
-           <Store className="text-[#39ff14]" size={32}/>
+           <span className="text-[#39ff14] text-3xl">🏪</span>
            <div>
              <h3 className="text-lg font-bold text-white">¿Eres Proveedor?</h3>
              <p className="text-gray-400 text-sm">Únete a nuestra red de tiendas y distribuidores.</p>
