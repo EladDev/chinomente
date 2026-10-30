@@ -55,7 +55,7 @@ export default function Home() {
         <h2 className="text-lg sm:text-2xl md:text-4xl font-light tracking-[0.1em] md:tracking-[0.2em] text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] uppercase mb-10 text-center flex flex-col md:flex-row md:gap-4 items-center">
           <span>Addy Diam0nd 💎</span>
           <span className="text-[#39ff14] text-sm md:text-2xl my-1 md:my-0">&</span>
-          <span>ChinoMente </span>
+          <span>𝕮𝖍𝖎𝖓𝖔𝖒𝖊𝖓𝖙𝖊</span>
         </h2>
         
         {/* Botones de Acción */}
